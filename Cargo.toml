@@ -10,3 +10,4 @@ actix-web = "4.3.1"
 chrono = "0.4.26"
 diesel = { version = "2.1.0", features = ["mysql", "r2d2", "chrono"] }
 r2d2 = "0.8.10"
+serde = { version = "1.0.164", features = ["derive"] }
