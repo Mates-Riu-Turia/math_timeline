@@ -1,3 +1,6 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
 body {
     background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ftodofondos.com%2Fbin%2Ffondos%2F05%2F63%2F73d.jpg&f=1&nofb=1&ipt=da1393e338fd8ac933e877183bb24049ee36c2f11eb8d6e39cddd7c9d6ad091c&ipo=images");
 }
