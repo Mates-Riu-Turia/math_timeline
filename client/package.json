@@ -1,20 +1,36 @@
 {
-    "dependencies": {
-      "react": "^18.0.0",
-      "react-dom": "^18.0.0",
-      "react-scripts": "^5.0.0"
-    },
-    "main": "/index.js",
-    "devDependencies": {
-      "react-scripts": "1.0.0"
-    },
-    "name": "math_timeline",
-    "description": "Web page of a timeline of math history",
-    "version": "0.0.0",
-    "scripts": {
-      "start": "react-scripts start",
-      "build": "react-scripts build",
-      "test": "react-scripts test --env=jsdom",
-      "eject": "react-scripts eject"
-    }
+  "dependencies": {
+    "i18next": "^23.2.3",
+    "i18next-browser-languagedetector": "^7.0.2",
+    "i18next-http-backend": "^2.2.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-i18next": "^13.0.1",
+    "react-scripts": "^5.0.0"
+  },
+  "main": "/index.js",
+  "devDependencies": {
+    "react-scripts": "^5.0.0"
+  },
+  "name": "math_timeline",
+  "description": "Web page of a timeline of math history",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "react-scripts start --experimental-modules",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
+}
