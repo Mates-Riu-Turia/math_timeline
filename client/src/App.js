@@ -41,17 +41,24 @@ function Nav({ t, changeLanguage }) {
     );
 }
 
-function AgeSelector({ t }) {
+function AgeSelector({t, setAppState}) {
+    function handleSubmit(e) {
+        e.preventDefault();
+        const ageSelector = document.getElementById("ageSelector");
+        const age = ageSelector.options[ageSelector.selectedIndex].value;
+        setAppState(age);
+    }
+
     return (
-        <form className="d-flex align-items-center position-absolute top-50 start-50 translate-middle w-75 h-50 bg-body-tertiary rounded-5">
+        <form className="d-flex align-items-center position-absolute top-50 start-50 translate-middle w-75 h-50 bg-body-tertiary rounded-5" onSubmit={handleSubmit}>
             <h2 className="text-center mt-3">Elija en que periodo quiere comenzar su viaje</h2>
-            <select className="form-select" aria-label="Default select example">
-                <option value="">Edad Antigua (⁓3000 aC - 476 dC)</option>
-                <option value="">Edad Medieval (453 dC - 1492 dC)</option>
-                <option value="">Edad Moderna (1492 dC - 1789 dC)</option>
-                <option value="">Edad Contemporanea (1789 dC - 2023 dC)</option>
+            <select id="ageSelector" className="form-select" label="Choose an age">
+                <option value="timelineAncientAge">Edad Antigua (⁓3000 aC - 476 dC)</option>
+                <option value="timelineMedievalAge">Edad Medieval (453 dC - 1492 dC)</option>
+                <option value="timelineModernAge">Edad Moderna (1492 dC - 1789 dC)</option>
+                <option value="timelineContemporaryAge">Edad Contemporanea (1789 dC - 2023 dC)</option>
             </select>
-            <button className="btn btn-success fixed-bottom w-100 mb-5" id="startButtonText">¡Vamos a comenzar el viaje!</button>
+            <button type="submit" className="btn btn-success fixed-bottom w-100 mb-5" id="startButtonText">¡Vamos a comenzar el viaje!</button>
         </form>
     );
 }
@@ -70,6 +77,7 @@ function Footer({ t }) {
 
 export default function App() {
     const { t, i18n } = useTranslation();
+    const [state, setState] = useState("AgeSelection");
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
@@ -81,7 +89,9 @@ export default function App() {
     return (
         <>
             <Nav t={t} changeLanguage={changeLanguage} />
-            <AgeSelector />
+            {
+                (state == "AgeSelection" ? <AgeSelector t={t} setAppState={setState} /> :  <h1>Help</h1>)
+            }
             <Footer t={t} />
         </>
     );
