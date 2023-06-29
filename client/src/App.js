@@ -51,14 +51,14 @@ function AgeSelector({t, setAppState}) {
 
     return (
         <form id="ageSelectorForm" className="d-flex align-items-center position-absolute top-50 start-50 translate-middle w-75 h-50 bg-body-tertiary rounded-5" onSubmit={handleSubmit}>
-            <h2 className="text-center mt-3">Elija en que periodo quiere comenzar su viaje</h2>
+            <h2 className="text-center mt-3">{t("ageSelector.intro")}</h2>
             <select id="ageSelector" className="form-select" label="Choose an age">
-                <option value="timelineAncientAge">Edad Antigua (⁓3000 aC - 476 dC)</option>
-                <option value="timelineMedievalAge">Edad Medieval (453 dC - 1492 dC)</option>
-                <option value="timelineModernAge">Edad Moderna (1492 dC - 1789 dC)</option>
-                <option value="timelineContemporaryAge">Edad Contemporanea (1789 dC - 2023 dC)</option>
+                <option value="timelineAncientAge">{t("ageSelector.ancientAge")}</option>
+                <option value="timelineMedievalAge">{t("ageSelector.medievalAge")}</option>
+                <option value="timelineModernAge">{t("ageSelector.modernAge")}</option>
+                <option value="timelineContemporaryAge">{t("ageSelector.contemporaryAge")}</option>
             </select>
-            <button type="submit" className="btn btn-success fixed-bottom mb-5" id="startButton">¡Vamos a comenzar el viaje!</button>
+            <button type="submit" className="btn btn-success fixed-bottom mb-5" id="startButton">{t("ageSelector.startTrip")}</button>
         </form>
     );
 }
@@ -66,7 +66,7 @@ function AgeSelector({t, setAppState}) {
 function Footer({ t }) {
     return (
         <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 border-top fixed-bottom bg-body-tertiary">
-            <p className="col-md-4 mb-1 ms-2 text-body-secondary">© 2023 Departament de Matemàtiques</p>
+            <p className="col-md-4 mb-1 ms-2 text-body-secondary">{t("orgName")}</p>
                 
             <a href="/" className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none me-3">
                 <img src="favicon.ico" alt="Logo" width="30" height="24" className="align-text-top" />
