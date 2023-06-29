@@ -23,14 +23,14 @@ function Nav({ t, changeLanguage }) {
         <nav className="navbar bg-body-tertiary">
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">
-                    <img src="favicon.ico" alt="Logo" width="30" height="24" className="d-inline-block align-text-top" />
+                    <img src="favicon.ico" alt="Logo" width="30" height="24" className="d-inline-block align-text-top me-1" />
                     {t("title")}
                 </a>
                 <div className="dropdown me-4">
                     <button className="btn btn-secondary dropdown-toggle rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i className="bi bi-globe-americas"></i><span id="langSelector">{state}</span>
                     </button>
-                    <ul className="dropdown-menu">
+                    <ul className="dropdown-menu dropdown-menu-end">
                         <li><button className="dropdown-item" type="button" onClick={changeLanguageCa}>Valencià/Català</button></li>
                         <li><button className="dropdown-item" type="button" onClick={changeLanguageEs}>Castellano</button></li>
                         <li><button className="dropdown-item" type="button" onClick={changeLanguageEn}>English</button></li>
