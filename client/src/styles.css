@@ -11,6 +11,13 @@ body {
     }
 }
 
+@media (max-height: 576px) {
+    #ageSelectorForm {
+        height: 70% !important;
+        transform: translate(-50%, -52%) !important;
+    }
+}
+
 #startButton {
     width: 96%;
     transform: translateX(2%);
