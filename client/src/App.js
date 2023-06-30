@@ -51,14 +51,14 @@ function AgeSelector({t, setAppState}) {
 
     return (
         <form className="d-flex align-items-center position-absolute top-50 start-50 translate-middle w-75 h-50 bg-body-tertiary rounded-5" onSubmit={handleSubmit}>
-            <h2 className="text-center mt-3">Elija en que periodo quiere comenzar su viaje</h2>
+            <h2 className="text-center mt-3">{t("ageSelectorText")}</h2>
             <select id="ageSelector" className="form-select" label="Choose an age">
-                <option value="timelineAncientAge">Edad Antigua (⁓3000 aC - 476 dC)</option>
-                <option value="timelineMedievalAge">Edad Medieval (453 dC - 1492 dC)</option>
-                <option value="timelineModernAge">Edad Moderna (1492 dC - 1789 dC)</option>
-                <option value="timelineContemporaryAge">Edad Contemporanea (1789 dC - 2023 dC)</option>
+                <option value="timelineAncientAge">{t("ancientAge")}</option>
+                <option value="timelineMedievalAge">{t("medievalAge")}</option>
+                <option value="timelineModernAge">{t("modernAge")}</option>
+                <option value="timelineContemporaryAge">{t("contemporaryAge")}</option>
             </select>
-            <button type="submit" className="btn btn-success fixed-bottom w-100 mb-5" id="startButtonText">¡Vamos a comenzar el viaje!</button>
+            <button type="submit" className="btn btn-success fixed-bottom w-100 mb-5" id="startButtonText">{t("ageButton")}</button>
         </form>
     );
 }

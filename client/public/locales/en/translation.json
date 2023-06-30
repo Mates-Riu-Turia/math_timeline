@@ -1,4 +1,10 @@
 {
     "title": "Math Timeline",
-    "chooseLang": "Choose a language"
+    "chooseLang": "Choose a language",
+    "ageSelectorText": "Choose in which period you want to start your trip",
+    "ageButton": "Let's start the trip!",
+    "ancientAge": "Ancient Age (⁓3000 aC - 476 dC)",
+    "medievalAge": "Middle Ages (453 dC - 1492 dC)",
+    "modernAge": "Modern Age (1492 dC - 1789 dC)",
+    "contemporaryAge": "Contemporary Age (1789 dC - 2023 dC)"
 }

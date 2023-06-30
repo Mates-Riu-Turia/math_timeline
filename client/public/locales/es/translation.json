@@ -1,4 +1,10 @@
 {
     "title": "Línea del Tiempo",
-    "chooseLang": "Elige un idioma"
+    "chooseLang": "Elige un idioma",
+    "ageSelectorText": "Elija en qué periodo quiere comenzar su viaje",
+    "ageButton": "¡Vamos a comenzar el viaje!",
+    "ancientAge": "Edad Antigua (⁓3000 aC - 476 dC)",
+    "medievalAge": "Edad Media (453 dC - 1492 dC)",
+    "modernAge": "Edad Moderna (1492 dC - 1789 dC)",
+    "contemporaryAge": "Edad Contemporánea (1789 dC - 2023 dC)"
 }
