@@ -1,0 +1,21 @@
+{
+    "name": "Math Timeline",
+    "short_name": "Math Timeline",
+    "start_url": ".",
+    "display": "standalone",
+    "description": "A timeline about the history of maths, you can interact with it selecting in which age you want to start, or viewing curiosities about discoveries, which mathematician discover that theorem...",
+    "icons": [
+      {
+        "src": "favicon.ico",
+        "sizes": "30x24",
+        "type": "image/x-icon"
+      }
+    ],
+    "related_applications": [
+      {
+        "platform": "not-now",
+        "url": "not-now"
+      }
+    ]
+  }
+  
