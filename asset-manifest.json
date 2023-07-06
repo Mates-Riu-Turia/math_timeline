@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/math_timeline/static/css/main.a8e1cc8b.css",
+    "main.js": "/math_timeline/static/js/main.e45c8f36.js",
+    "index.html": "/math_timeline/index.html",
+    "static/media/getFetch.cjs": "/math_timeline/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.a8e1cc8b.css.map": "/math_timeline/static/css/main.a8e1cc8b.css.map",
+    "main.e45c8f36.js.map": "/math_timeline/static/js/main.e45c8f36.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8e1cc8b.css",
+    "static/js/main.e45c8f36.js"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Línia del temps",
+    "chooseLang": "Elegeix un idioma",
+    "ageSelector": {
+        "intro": "Trie en quin període vols començar el teu viatge",
+        "ancientAge": "Edat Antiga (⁓3000 aC - 476 dC)",
+        "medievalAge": "Edat Mitjana (453 dC - 1492 dC)",
+        "modernAge": "Edat Moderna (1492 dC - 1789 dC)",
+        "contemporaryAge": "Edat Contemporània (1789 dC - 2023 dC)",
+        "startTrip": "Anem a començar el viatge!"
+    },
+    "orgName": "© 2023 Dept. de Matemàtiques de l'IES Riu Túria"
+}

@@ -1,0 +1,13 @@
+{
+    "title": "Math Timeline",
+    "chooseLang": "Choose a language",
+    "ageSelector": {
+        "intro": "Choose in which period you want to start your trip",
+        "ancientAge": "Ancient Age (⁓3000 BC - 476 AC)",
+        "medievalAge": "Medieval Age (453 AC - 1492 AC)",
+        "modernAge": "Modern Age (1492 AC - 1789 AC)",
+        "contemporaryAge": "Contemporary Age (1789 AC - 2023 AC)",
+        "startTrip": "Let's start the trip!"
+    },
+    "orgName": "© 2023 Dept. of Mathematics of the IES Riu Túria"
+}
