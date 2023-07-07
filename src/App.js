@@ -22,7 +22,7 @@ function Nav({ t, changeLanguage }) {
     return (
         <nav className="navbar bg-body-tertiary">
             <div className="container-fluid">
-                <a className="navbar-brand" href="/">
+                <a className="navbar-brand" href="/math_timeline/">
                     <img src="/math_timeline/favicon.ico" alt="Logo" width="30" height="24" className="d-inline-block align-text-top me-1" />
                     {t("title")}
                 </a>
@@ -68,7 +68,7 @@ function Footer({ t }) {
         <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 border-top fixed-bottom bg-body-tertiary">
             <p className="col-md-4 mb-1 ms-2 text-body-secondary">{t("orgName")}</p>
                 
-            <a href="/" className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none me-3">
+            <a href="/math_timeline/" className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none me-3">
                 <img src="/math_timeline/favicon.ico" alt="Logo" width="30" height="24" className="align-text-top" />
             </a>
         </footer>
