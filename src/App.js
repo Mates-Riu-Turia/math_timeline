@@ -23,7 +23,7 @@ function Nav({ t, changeLanguage }) {
         <nav className="navbar bg-body-tertiary">
             <div className="container-fluid">
                 <a className="navbar-brand" href="/">
-                    <img src="favicon.ico" alt="Logo" width="30" height="24" className="d-inline-block align-text-top me-1" />
+                    <img src="/math_timeline/favicon.ico" alt="Logo" width="30" height="24" className="d-inline-block align-text-top me-1" />
                     {t("title")}
                 </a>
                 <div className="dropdown me-4">
@@ -69,7 +69,7 @@ function Footer({ t }) {
             <p className="col-md-4 mb-1 ms-2 text-body-secondary">{t("orgName")}</p>
                 
             <a href="/" className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none me-3">
-                <img src="favicon.ico" alt="Logo" width="30" height="24" className="align-text-top" />
+                <img src="/math_timeline/favicon.ico" alt="Logo" width="30" height="24" className="align-text-top" />
             </a>
         </footer>
     );
