@@ -1,12 +1,12 @@
-import { React, useState } from "react";
+import React from "react";
 import { useTranslation } from 'react-i18next';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Nav, Footer } from "./components/basicUI";
 import { AgeSelector } from "./components/ageSelector";
 
 export default function App() {
     const { t, i18n } = useTranslation();
-    const [state, setState] = useState("AgeSelection");
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
@@ -16,12 +16,14 @@ export default function App() {
     document.title = t("title");
 
     return (
-        <>
+        <Router>
             <Nav t={t} changeLanguage={changeLanguage} />
-            {
-                (state == "AgeSelection" ? <AgeSelector t={t} setAppState={setState} /> :  <h1>Help</h1>)
-            }
+            <Routes>
+                <Route path="/math_timeline/" element={
+                    <AgeSelector t={t}/>
+                } />
+            </Routes>
             <Footer t={t} />
-        </>
+        </Router>
     );
 }
