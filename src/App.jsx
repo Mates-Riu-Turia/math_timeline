@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { Nav, Footer } from "./components/basicUI";
 import { AgeSelector } from "./components/ageSelector";
+import { Branches } from "./components/branches"
 import { NotFound } from "./components/notFound";
 
 export default function App() {
@@ -21,7 +22,10 @@ export default function App() {
             <Nav t={t} changeLanguage={changeLanguage} />
             <Routes>
                 <Route path="/math_timeline/" element={
-                    <AgeSelector t={t}/>
+                    <AgeSelector t={t} />
+                } />
+                <Route path="/math_timeline/timeline/:age" element={
+                    <Branches />
                 } />
                 <Route path="*" element={
                     <NotFound t={t} />
