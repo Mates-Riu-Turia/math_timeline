@@ -14,5 +14,11 @@
         "light": " Claro",
         "dark": " Oscuro",
         "auto": " Automático"
+    },
+    "notFound": {
+        "onomatopoeia": "¡Ups!",
+        "error": "Página no encontrada.",
+        "description": "La página que buscas no existe o ha sido movida.",
+        "home": "Ir a inicio"
     }
 }
