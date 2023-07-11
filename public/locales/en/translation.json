@@ -14,5 +14,11 @@
         "light": " Light",
         "dark": " Dark",
         "auto": " Auto"
+    },
+    "notFound": {
+        "onomatopoeia": "Ops!",
+        "error": "Page not found.",
+        "description": "The page you are looking for doesn't exist or has been moved.",
+        "home": "Go home"
     }
 }
