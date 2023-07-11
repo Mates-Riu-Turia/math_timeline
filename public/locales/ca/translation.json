@@ -9,5 +9,10 @@
         "contemporaryAge": "Edat Contemporània (1789 dC - 2023 dC)",
         "startTrip": "Anem a començar el viatge!"
     },
-    "orgName": "© 2023 Dept. de Matemàtiques de l'IES Riu Túria"
+    "orgName": "© 2023 Dept. de Matemàtiques de l'IES Riu Túria",
+    "themeSelector": {
+        "light": " Clar",
+        "dark": " Fosc",
+        "auto": " Automàtic"
+    }
 }
