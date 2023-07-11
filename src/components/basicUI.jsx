@@ -7,8 +7,8 @@ export function Nav({ t, changeLanguage }) {
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
             <Container fluid>
                 <Navbar.Brand href="/math_timeline/">
-                    <img src="/math_timeline/images/favicon_big.gif" alt="Logo" width="180" height="60" className="d-inline-block align-text-middle" />
-                    <span className="d-none" id="navTitle">{t("titleLong")}</span>
+                    <img src="/math_timeline/images/favicon.png" alt="Logo" width="180" height="60" className="d-inline-block align-text-middle" />
+                    <span>{t("title")}</span>
                 </Navbar.Brand>
 
                 <Navbar.Toggle />
