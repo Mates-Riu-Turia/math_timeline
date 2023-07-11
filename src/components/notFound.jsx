@@ -14,7 +14,7 @@ export function NotFound({ t }) {
                 <p className="lead">
                     {t("notFound.description")}
                 </p>
-                <a href="/math_museum/" className="btn btn-primary">
+                <a href="/math_timeline/" className="btn btn-primary">
                     {t("notFound.home")}
                     <i className="bi bi-house-fill ms-1"></i>
                 </a>
