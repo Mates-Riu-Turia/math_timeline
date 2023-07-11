@@ -14,5 +14,11 @@
         "light": " Clar",
         "dark": " Fosc",
         "auto": " Automàtic"
+    },
+    "notFound": {
+        "onomatopoeia": "Ups!",
+        "error": "Pàgina no trobada.",
+        "description": "La pàgina que cerques no existeix o ha sigut moguda.",
+        "home": "Anar a inici"
     }
 }
