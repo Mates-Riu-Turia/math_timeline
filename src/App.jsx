@@ -40,8 +40,6 @@ export default function App() {
         return (<></>);
     }
 
-
-
     return (
         <Router>
             <Nav t={t} changeLanguage={changeLanguage} />
@@ -50,7 +48,7 @@ export default function App() {
                     <AgeSelector t={t} />
                 } />
                 <Route path="/math_timeline/timeline/:age" element={
-                    <Branches />
+                    <Branches tree={branches} />
                 } />
                 <Route path="*" element={
                     <NotFound t={t} />
