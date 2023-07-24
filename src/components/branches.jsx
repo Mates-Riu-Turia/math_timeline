@@ -16,19 +16,23 @@ const getParent = (tree, givenBranch) => {
     return "nothing";
 }
 
-// Given a tree (an agrupation of branches from the DB, calculates the ideal size for the branches
+const getTitle = (tree, givenBranch) => {
+    for (const branch of tree) {
+        if (branch.name == givenBranch) {
+            return branch.title;
+        }
+    }
+}
+
+// Given a tree (an agrupation of branches from the DB), calculates the ideal size for the branches
 const branchSize = (tree, level) => {
-    let size = window.innerHeight * 0.85;
+    let size = window.innerHeight * 0.95;
     let finalChild = 0;
 
     for (const branch of tree) {
-        if (branch.level == level) {
-            if (branch.children.length != 0) {
-                size -= 20;
-            }
-            else {
-                finalChild++;
-            }
+        if (branch.level == level && branch.children.length != 0) {
+            size -= 50 * branch.children.length;
+            finalChild++;
         }
     }
 
@@ -54,17 +58,22 @@ const drawBranch = (ctx, branchTitle, branchSize, yStart) => {
     ctx.stroke()
 
     ctx.font = "30px Sans Serif"
-    ctx.fillText(branchTitle, 25, yStart + (branchSize / 2));
+    ctx.fillText(branchTitle, 25, yStart + 35);
 };
 
 const drawTree = (ctx, tree, offset) => {
     const size = branchSize(tree, 0) - offset;
     let y = 5;
-
     for (const branch of tree) {
         if (getParent(tree, branch.name) == "nothing") {
-            drawBranch(ctx, branch.title, size, y)
-            y = y + size + 25;
+            drawBranch(ctx, branch.title, size, y);
+            const childSize = (size - 10) / branch.children.length;
+            let yChild = y + 35;
+            for (const child of branch.children) {
+                drawBranch(ctx, getTitle(tree, child), childSize, yChild);
+                yChild += 5 + childSize;
+            }
+            y = y + size + 50;
         }
     }
 }
