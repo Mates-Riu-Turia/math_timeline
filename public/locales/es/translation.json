@@ -20,5 +20,12 @@
         "error": "Página no encontrada.",
         "description": "La página que buscas no existe o ha sido movida.",
         "home": "Ir a inicio"
+    },
+    "login": {
+        "not_logged": "¡Sesión no iniciada!",
+        "login": "Iniciar sesión",
+        "register": "Registrarse",
+        "manage": "Gestionar cuenta",
+        "logout": "Cerrar sesión" 
     }
 }
