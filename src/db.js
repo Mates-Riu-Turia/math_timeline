@@ -6,6 +6,12 @@ const config = {
 };
 export const app = new Realm.App(config);
 
+const id_login = "login-hjvlc";
+const config_login = {
+    id: id_login
+};
+export const app_login = new Realm.App(config_login);
+
 export const loginAnonymous = async () => {
     if (app.currentUser === null) {
         return (await app.logIn(Realm.Credentials.anonymous()));

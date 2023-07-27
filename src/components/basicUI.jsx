@@ -2,9 +2,11 @@ import { React, useState } from "react";
 import { Dropdown, Container, Navbar, Button } from "react-bootstrap";
 import useTheme from "../hooks/useTheme";
 
+import { AccountSelector } from "./account";
+
 export function Nav({ t, changeLanguage }) {
     return (
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary z-3">
             <Container fluid>
                 <Navbar.Brand href="/math_timeline/">
                     <img src="/math_timeline/images/favicon.png" alt="Logo" width="180" height="60" className="d-inline-block align-text-middle" />
@@ -15,6 +17,7 @@ export function Nav({ t, changeLanguage }) {
                 <Navbar.Collapse>
                     <LanguageSelector t={t} changeLanguage={changeLanguage} />
                     <ThemeSelector t={t} />
+                    <AccountSelector t={t} />
                 </Navbar.Collapse>
             </Container>
         </Navbar>
@@ -35,6 +38,7 @@ function LanguageSelector({ t, changeLanguage }) {
                 <i className="bi bi-globe-americas"></i>
                 <span>{state}</span>
             </Dropdown.Toggle>
+
             <Dropdown.Menu>
                 <Dropdown.Item onClick={() => changeLanguageHelper("ca")}>Valencià/Català</Dropdown.Item>
                 <Dropdown.Item onClick={() => changeLanguageHelper("es")}>Castellano</Dropdown.Item>
@@ -49,10 +53,11 @@ function ThemeSelector({ t }) {
 
     return (
         <Dropdown>
-            <Dropdown.Toggle variant="secondary" className="rounded-pill">
+            <Dropdown.Toggle variant="secondary" className="rounded-pill m-1">
                 <i className={getTheme()[0]}></i>
                 <span>{t(getTheme()[1])}</span>
             </Dropdown.Toggle>
+            
             <Dropdown.Menu className="dropdown-menu-lg-end">
                 <Dropdown.Item onClick={() => setTheme("light")}>
                     <i className="bi bi-sun-fill">{t("themeSelector.light")}</i>
