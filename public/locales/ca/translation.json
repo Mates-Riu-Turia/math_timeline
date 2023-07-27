@@ -20,5 +20,12 @@
         "error": "Pàgina no trobada.",
         "description": "La pàgina que cerques no existeix o ha sigut moguda.",
         "home": "Anar a inici"
+    },
+    "login": {
+        "not_logged": "Sessió no iniciada!",
+        "login": "Iniciar sessió",
+        "register": "Registrar-se",
+        "manage": "Gestionar compte",
+        "logout": "Tancar sessió"
     }
 }
