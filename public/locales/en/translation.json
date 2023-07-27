@@ -20,5 +20,12 @@
         "error": "Page not found.",
         "description": "The page you are looking for doesn't exist or has been moved.",
         "home": "Go home"
+    },
+    "login": {
+        "not_logged": "Session not started!",
+        "login": "Log in",
+        "register": "Sign up",
+        "manage": "Manage account",
+        "logout": "Log out"
     }
 }
