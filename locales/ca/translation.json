@@ -9,5 +9,23 @@
         "contemporaryAge": "Edat Contemporània (1789 dC - 2023 dC)",
         "startTrip": "Anem a començar el viatge!"
     },
-    "orgName": "© 2023 Dept. de Matemàtiques de l'IES Riu Túria"
+    "orgName": "© 2023 Dept. de Matemàtiques de l'IES Riu Túria",
+    "themeSelector": {
+        "light": " Clar",
+        "dark": " Fosc",
+        "auto": " Automàtic"
+    },
+    "notFound": {
+        "onomatopoeia": "Ups!",
+        "error": "Pàgina no trobada.",
+        "description": "La pàgina que cerques no existeix o ha sigut moguda.",
+        "home": "Anar a inici"
+    },
+    "login": {
+        "not_logged": "Sessió no iniciada!",
+        "login": "Iniciar sessió",
+        "register": "Registrar-se",
+        "manage": "Gestionar compte",
+        "logout": "Tancar sessió"
+    }
 }

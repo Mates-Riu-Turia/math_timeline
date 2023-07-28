@@ -9,5 +9,23 @@
         "contemporaryAge": "Contemporary Age (1789 AC - 2023 AC)",
         "startTrip": "Let's start the trip!"
     },
-    "orgName": "© 2023 Dept. of Mathematics of the IES Riu Túria"
+    "orgName": "© 2023 Dept. of Mathematics of the IES Riu Túria",
+    "themeSelector": {
+        "light": " Light",
+        "dark": " Dark",
+        "auto": " Auto"
+    },
+    "notFound": {
+        "onomatopoeia": "Ops!",
+        "error": "Page not found.",
+        "description": "The page you are looking for doesn't exist or has been moved.",
+        "home": "Go home"
+    },
+    "login": {
+        "not_logged": "Session not started!",
+        "login": "Log in",
+        "register": "Sign up",
+        "manage": "Manage account",
+        "logout": "Log out"
+    }
 }
