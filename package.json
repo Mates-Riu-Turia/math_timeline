@@ -1,0 +1,45 @@
+{
+  "homepage": "https://mates-riu-turia.github.io/math_timeline",
+  "dependencies": {
+    "bootstrap": "^5.3.0",
+    "bootstrap-icons": "^1.10.5",
+    "i18next": "^23.2.3",
+    "i18next-browser-languagedetector": "^7.0.2",
+    "i18next-http-backend": "^2.2.1",
+    "react": "^18.0.0",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^18.0.0",
+    "react-i18next": "^13.0.1",
+    "react-router-dom": "^6.14.1",
+    "react-scripts": "^5.0.0",
+    "realm-web": "^2.0.0"
+  },
+  "main": "/index.js",
+  "devDependencies": {
+    "gh-pages": "^5.0.0",
+    "react-scripts": "^5.0.0"
+  },
+  "name": "math_timeline",
+  "description": "Web page of a timeline of math history",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "react-scripts start --experimental-modules",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

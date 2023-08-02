@@ -1,0 +1,31 @@
+{
+    "title": "Línea del Tiempo",
+    "chooseLang": "Elige un idioma",
+    "ageSelector": {
+        "intro": "Elija en que período quiere comenzar su viaje",
+        "ancientAge": "Edad Antigua (⁓3000 aC - 476 dC)",
+        "medievalAge": "Edad Medieval (453 dC - 1492 dC)",
+        "modernAge": "Edad Moderna (1492 dC - 1789 dC)",
+        "contemporaryAge": "Edad Contemporánea (1789 dC - 2023 dC)",
+        "startTrip": "¡Vamos a comenzar el viaje!"
+    },
+    "orgName": "© 2023 Dpto. de Matemáticas del IES Riu Túria",
+    "themeSelector": {
+        "light": " Claro",
+        "dark": " Oscuro",
+        "auto": " Automático"
+    },
+    "notFound": {
+        "onomatopoeia": "¡Ups!",
+        "error": "Página no encontrada.",
+        "description": "La página que buscas no existe o ha sido movida.",
+        "home": "Ir a inicio"
+    },
+    "login": {
+        "not_logged": "¡Sesión no iniciada!",
+        "login": "Iniciar sesión",
+        "register": "Registrarse",
+        "manage": "Gestionar cuenta",
+        "logout": "Cerrar sesión" 
+    }
+}
