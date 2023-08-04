@@ -1,6 +1,6 @@
 import { Dropdown } from "react-bootstrap";
 
-import { app, app_login } from "../db";
+import { app_login } from "../db";
 
 export function AccountSelector({ t }) {
     if (app_login.currentUser === null) {
@@ -30,6 +30,7 @@ export function AccountSelector({ t }) {
             </Dropdown.Toggle>
 
             <Dropdown.Menu className="dropdown-menu-lg-end">
+                <div dangerouslySetInnerHTML={{__html: localStorage.getItem("avatar")}}></div>
                 <Dropdown.Item href="/login/account/" target="blank">
                     <i className="bi bi-gear"> </i>
                     {t("login.manage")}
